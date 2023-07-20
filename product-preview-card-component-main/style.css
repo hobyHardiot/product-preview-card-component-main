@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* 
+{
+    padding: 0px;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: hsl(228, 12%, 48%);
+    background-color: hsl(30, 38%, 92%);
+}
+
+h1 {
+    font-family: "Fraunces", serif;
+    color: hsl(212, 21%, 14%);
+    font-size: 2rem;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    border-radius: 20px;
+}
+
+img {
+    flex: 1 0 50%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.category {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.product-desc {
+    padding: 35px;
+}
+
+.prices {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.sale-price {
+    font-family: "Fraunces", serif;
+    color:hsl(158, 36%, 37%);
+    margin-right: 20px;
+    font-size: 1.7rem;
+}
+
+.list-price {
+    text-decoration: line-through;
+}
+
+button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    height: 50px;
+    width: 100%;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+    padding: 20px;
+    border-style: none;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: hsl(158, 45%, 20%);
+}
+
+button:active {
+    background-color: hsl(158, 45%, 20%);
+}
+
+.fa-cart-shopping {
+    margin-right: 10px;
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(158, 36%, 37%); 
+}
+
+@media only screen and (max-width: 600px) {
+    section {
+        flex-direction: column;
+        width: 400px;
+    }
+
+    h1 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .prices {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    img {
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+       }
+  }
